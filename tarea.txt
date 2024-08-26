@@ -1,2 +1,2 @@
-primer commit
-segundo commit
+Primer commit.
+Segundo commit. 
