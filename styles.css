@@ -1,0 +1,42 @@
+.Contenedor{
+
+    margin: 0 auto;
+    width: 50%;
+    justify-items: center;
+}
+.Encabezado{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Encabezado h1{
+   font-size: 22px;
+}
+.Encabezado p{
+    text-align: justify;
+}
+.Foto-Principal{
+    width: 100%;
+    height: auto;
+}
+.Paneles{
+    display: flex;
+    padding-top: 20px;
+}
+.Redes{
+    width: 120px;
+    margin-bottom: 100%;
+  
+}
+.Autora{
+    display: flex;
+    gap: 2%;
+}
+.Autora img{
+    width:45px;
+    border-radius:100%;
+}
+.Texto color{
+    color: rgb(41, 107, 230);
+}
+.Texto destacar{
+    background-color: yellow;
+}
