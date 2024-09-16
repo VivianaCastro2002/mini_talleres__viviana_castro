@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+header{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+header span{
+    font-weight: bold;
+}
+
+.Delivery{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Delivery .Location{
+    width: 30px;
+    height: 35px;
+}
+
+.Search-Bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.Search-Bar p{
+    width: 80%;
+    height: 30px;
+    background-color: #F4F4F4;
+    border: 1px solid #E2E2E2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #978988;
+}
+.Search-Bar .Search{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #0A8920;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Login{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.Cart{
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #E5F8E3;
+    
+}
+
+.Categories{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A8920;
+    width: 16%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0.5% 1% 0.5% 1%;
+    color: #F4F4F4 ;   
+}
+.Offers{
+    width: auto;
+    height: auto;
+    min-width:100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F8E688;
+    width: 10%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0.5% 1% 0.5% 1%;
+}
+
+.Items{
+    display: inline-flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+.Product{
+    width: 16%;
+}
+.Product .Brand{
+    color: #11111183;
+    font-size: 14px;
+}
+.Product h5{
+    width: 180px;
+    height: 25px;
+    color: #E2E2E2;
+    background-color: #0A8920;
+    border-radius: 8px;
+    padding: 4% 0 0 0;
+    text-align: center;
+}
