@@ -1,47 +1,56 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <span>Nota 1:</span>
+  <input v-model="nota1">
+  <span>Nota 2:</span>
+  <input v-model="nota2">
+  <span>Nota 3:</span>
+  <input v-model="nota3">
+  <span>Nota 4:</span>
+  <input v-model="nota4">
+  <span>Nota 5:</span>
+  <input v-model="nota5">
+  <span>Nota 6:</span>
+  <input v-model="nota6">
+  
+  <button @click="calcularPromedio">
+    Calcular promedio
+  </button>
+  <span>El promedio es: {{ promedio }}</span>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  
+  <button @click="obtenerTodo">
+    Obtener todo
+  </button>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <button @click="obtenerNotas">
+    Obtener Notas de Alumno
+  </button>
+    <button @click="obtenerAprobados">
+      Obtener aprobados
+    </button>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
+
+<script setup>
+import datosAlumnos from '@/assets/datosAlumnos.json';
+import { ref } from "vue";
+
+const alumnos = ref(datosAlumnos.alumnos);
+
+const nota1 = ref(0);
+const nota2 = ref(0);
+const nota3 = ref(0);
+const nota4 = ref(0);
+const nota5 = ref(0);
+const nota6 = ref(0);
+
+const promedio = ref(0);
+
+const calcularPromedio = () => {
+  promedio.value = (parseFloat(nota1.value) * 0.2 + parseFloat(nota2.value) * 0.2 + parseFloat(nota3.value) * 0.2 + parseFloat(nota4.value) * 0.2 + parseFloat(nota5.value) * 0.1 + parseFloat(nota6.value) * 0.1);
+}
+
+</script>
